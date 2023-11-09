@@ -36,12 +36,12 @@
             this.txt_observaciones = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.btn_agregar = new MaterialSkin.Controls.MaterialButton();
             this.dtg_prestamo = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_nombre = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_descripcion = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_existencias = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_nombre_implemento = new MaterialSkin.Controls.MaterialTextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_prestamo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -203,6 +203,19 @@
             this.dtg_prestamo.ReadOnly = true;
             this.dtg_prestamo.Size = new System.Drawing.Size(892, 195);
             this.dtg_prestamo.TabIndex = 11;
+            this.dtg_prestamo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_prestamo_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Código implemento";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Cantidad prestada";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // txt_nombre
             // 
@@ -275,18 +288,6 @@
             this.txt_nombre_implemento.TabIndex = 15;
             this.txt_nombre_implemento.Text = "";
             this.txt_nombre_implemento.TrailingIcon = null;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Código implemento";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Cantidad prestada";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
             // 
             // frm_prestamos
             // 

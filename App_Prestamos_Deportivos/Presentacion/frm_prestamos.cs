@@ -78,5 +78,10 @@ namespace Presentacion
                     Convert.ToInt16(dtg_prestamo.Rows[i].Cells[1].Value));
             }
         }
+
+        private void dtg_prestamo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
